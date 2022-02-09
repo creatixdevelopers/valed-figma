@@ -181,6 +181,24 @@
         autoplay: {
             delay: 3000,
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 60
+            },
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 80
+            },
+            992: {
+                slidesPerView: 6,
+                spaceBetween: 120
+            }
+        },
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
@@ -196,6 +214,49 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
     })
+
+    /**
+     * Testimonials Slider
+     */
+    new Swiper('.testimonials-slider', {
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 3000,
+        },
+        grabCursor: true,
+        slidesPerView: 1,
+        breakpoints: {
+            320: {
+                direction: 'horizontal',
+            },
+            480: {
+                direction: 'horizontal',
+            },
+            640: {
+                direction: 'vertical',
+            },
+            992: {
+                direction: 'vertical',
+            }
+        },
+        effect: 'coverflow',
+        centeredSlides: false,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 170,
+            depth: 200,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: '#testimonialsDots',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 })()
