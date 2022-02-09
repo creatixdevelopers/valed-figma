@@ -1070,16 +1070,18 @@ section {
     position: relative;
 }
 
-#cultural-programs .swiper-slide img {
-    transition: 0.3s;
+#cultural-programs .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#cultural-programs .swiper-slide img:hover {
-    opacity: 1;
-    filter: none;
+#cultural-programs .swiper-slide {
+    width: 300px;
+    margin: 0 3rem;
 }
 
-.swiper-button-prev {
+#cultural-programs .swiper-button-prev {
     background-image: url('assets/img/prev.png') !important;
     background-size: contain;
     height: 4rem;
@@ -1087,11 +1089,11 @@ section {
     margin-left: 2rem;
 }
 
-.swiper-button-prev:after {
+#cultural-programs .swiper-button-prev:after {
     display: none;
 }
 
-.swiper-button-next {
+#cultural-programs .swiper-button-next {
     background-image: url('assets/img/next.png') !important;
     background-size: contain;
     height: 4rem;
@@ -1099,18 +1101,18 @@ section {
     margin-right: 2rem;
 }
 
-.swiper-button-next:after {
+#cultural-programs .swiper-button-next:after {
     display: none;
 }
 
 @media (max-width: 768px) {
-    .swiper-button-prev {
+    #cultural-programs .swiper-button-prev {
         height: 2rem;
         width: 2rem;
         margin-left: 2rem;
     }
 
-    .swiper-button-next {
+    #cultural-programs .swiper-button-next {
         height: 2rem;
         width: 2rem;
         margin-right: 1rem;

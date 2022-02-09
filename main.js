@@ -176,17 +176,26 @@
      * Programs Slider
      */
     new Swiper('.programs-slider', {
-        speed: 400,
         loop: true,
+        speed: 1000,
         autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
+            delay: 3000,
         },
-        slidesPerView: 1,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 40,
+            depth: 300,
+            modifier: 1,
+            slideShadows: true,
+        },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-    });
 
+    })
 })()
