@@ -347,12 +347,22 @@ h1, h2, h3, h4, h5, h6 {
     align-items: start;
 }
 
+#culturalHero img {
+    width: auto;
+    height: 70vh;
+}
+
 @media (max-width: 768px) {
     #hero {
         height: 100vh;
         margin-top: 20%;
         background: url('assets/img/banner-phone.png') center center no-repeat;
-        background-size: cover;
+        background-size: contain;
+    }
+
+    #culturalHero img {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -410,7 +420,7 @@ section {
     }
 
     .section-title img {
-        width: 85%;
+        width: 100%;
     }
 
     .section-title p:first-of-type {
@@ -456,10 +466,6 @@ section {
 }
 
 @media (max-width: 768px) {
-    .about .section-title img {
-        width: 85%;
-    }
-
     .about {
         padding: 30px 0 20px 0;
     }
@@ -1134,38 +1140,50 @@ section {
 /*--------------------------------------------------------------
 # Programs About
 --------------------------------------------------------------*/
-#program-about .container {
-    position: relative;
-    z-index: 10;
+#program-about {
+    padding: 0 0 20px 0;
 }
 
 #program-about .section-title h2 {
-    font-size: 2.7rem;
-    font-family: 'Volkhov', serif !important;
-    font-weight: 700;
+    font-size: 6rem;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 900;
     text-align: center;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    position: relative;
+    color: #F15A29;
+    margin-bottom: 0;
 }
 
 #program-about .section-title p {
+    font-family: 'Urbanist', sans-serif !important;
     text-align: center;
-    position: relative;
+    font-size: 1.2rem;
+}
+
+#program-about #details h4 {
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 900;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+#program-about #details p {
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 1rem;
 }
 
 #program-about img {
     height: auto;
-    width: 25rem;
+    width: 30rem;
 }
 
 @media (max-width: 768px) {
-    #program-about a {
-        height: auto;
+    #program-about img {
+        width: 100%;
+        height: 20rem;
     }
 
-    #program-about img {
-        height: auto;
+    #program-about .section-title h2 {
+        font-size: 4rem;
     }
 }
 
@@ -1234,24 +1252,16 @@ section {
 /*--------------------------------------------------------------
 # How It Works
 --------------------------------------------------------------*/
-.how-it-works .section-title h2 {
-    font-size: 2.7rem;
-    font-family: 'Volkhov', serif !important;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    position: relative;
+.how-it-works{
+    padding:30px;
 }
 
 .how-it-works .section-title p {
     text-align: center;
-    color: #5E6282;
     padding-bottom: 20px;
-    position: relative;
 }
 
-.how-it-works img {
+.how-it-works-img {
     width: 70%;
     height: auto;
     margin: 0 auto;
@@ -1267,7 +1277,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .how-it-works img {
+    .how-it-works-img {
         width: 100%;
     }
 
