@@ -1511,16 +1511,23 @@ section {
     color: #343a40;
 }
 
-#freeSession .btn {
+#freeSession .submitBtn {
     background-color: #F47521;
     color: white;
     margin-top: 2rem;
     padding: 12px 24px 12px 32px;
 }
 
-#freeSession .add-new {
+#freeSession .deleteBtn {
+    background-color: #F47521;
+    color: white;
+    border: none;
+}
+
+#freeSession .add-new-child {
     color: #F47521;
     font-weight: 500;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {

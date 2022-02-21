@@ -48,59 +48,76 @@
 							<option>Europe</option>
 							<option>Australia</option>
 						</select>
-						<a id="nextBtn" class="btn" href="#">Go Next<span class="ms-2"><i class="uil-arrow-right"></i></span></a>
+						<a id="nextBtn" class="btn submitBtn" href="#">Go
+							Next<span class="ms-2"><i class="uil-arrow-right"></i></span></a>
 					</form>
 				</div>
 
 				<div class="card">
 					<h5>Child Details</h5>
 					<p><span>Life-Lab</span></p>
-					<p>A Contemporary Approach to Character Building through Values, Life-SKills, Mindset & Well-Being</p>
+					<p>A Contemporary Approach to Character Building through Values, Life-SKills, Mindset &
+						Well-Being</p>
 					<p class="mt-4"><span>Saksham</span></p>
-					<p>A Cultural Approach to Character Building through Science behind RItuals, Mythology, Folk Tales, Indian Role Modles & much
+					<p>A Cultural Approach to Character Building through Science behind RItuals, Mythology, Folk Tales,
+						Indian Role Models & much
 						more</p>
 					<form id="freeSessionFormChild" action="#">
-						<div class="childDetailsContainer row">
-							<div class="col-lg-6">
-								<label>Full Name</label>
-								<input type="text" class="form-control" name="childName" placeholder="Full name">
-							</div>
-							<div class="col-lg-6">
-								<label>Age (in years)</label>
-								<input type="number" class="form-control" name="childAge" placeholder="Age">
-							</div>
-							<div class="col-lg-6">
-								<label>Time Zone</label>
-								<select class="form-control" name="time">
-									<option selected disabled>Please Select</option>
-									<option>(GMT+5:30)IST</option>
-									<option>(GMT+6:30)IST</option>
-									<option>(GMT+7:30)IST</option>
-									<option>(GMT+8:30)IST</option>
-								</select>
-							</div>
-							<div class="col-lg-6">
-								<label>Schedule Date</label>
-								<input type="date" name="date">
-							</div>
-							<div class="col-lg-6">
-								<label>Time</label>
-								<input type="text" class="timepicker" id="timePicker" data-mintime="now" placeholder="Select time">
-							</div>
-							<div class="col-lg-6">
-								<label>Select Program</label>
-								<select class="form-control" name="time">
-									<option selected disabled>Please Select</option>
-									<option>Life-Lab</option>
-									<option>Saksham</option>
-								</select>
+						<div class="childDetailsContainer">
+							<div class="childData row">
+								<div id="newChildLine" class="col-lg-12 mt-3">
+									<hr>
+									<div class="col-lg-6 d-flex">
+										<p class="mt-1">Enter Child Details</p>
+										<button class="deleteChildDataBtn btn deleteBtn btn-danger d-none">
+											<i class="uil-trash-alt"></i>
+										</button>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<label>Full Name</label>
+									<input type="text" class="form-control" name="childName" placeholder="Full name">
+								</div>
+								<div class="col-lg-6">
+									<label>Age (in years)</label>
+									<input type="number" class="form-control" name="childAge" placeholder="Age">
+								</div>
+								<div class="col-lg-6">
+									<label>Time Zone</label>
+									<select class="form-control" name="time">
+										<option selected disabled>Please Select</option>
+										<option>(GMT+5:30)IST</option>
+										<option>(GMT+6:30)IST</option>
+										<option>(GMT+7:30)IST</option>
+										<option>(GMT+8:30)IST</option>
+									</select>
+								</div>
+								<div class="col-lg-6">
+									<label>Schedule Date</label>
+									<input type="date" name="date">
+								</div>
+								<div class="col-lg-6">
+									<label>Time</label>
+									<input type="text" class="timepicker" id="timePicker" data-mintime="now" placeholder="Select time">
+								</div>
+								<div class="col-lg-6">
+									<label>Select Program</label>
+									<select class="form-control" name="time">
+										<option selected disabled>Please Select</option>
+										<option>Life-Lab</option>
+										<option>Saksham</option>
+									</select>
+								</div>
 							</div>
 						</div>
 						<div class="mt-4">
-							<a class="add-new" href="#"><span class="ms-2"><i class="uil-plus"></i></span>Add Another Child</a>
+							<a class="add-new-child"><span class="ms-2"><i class="uil-plus"></i></span>Add
+								Another Child
+							</a>
 						</div>
 						<div class="col-lg-6">
-							<a class="btn submit mt-4" href="#">Schedule Now<span class="ms-2"><i class="uil-arrow-right"></i></span></a>
+							<a class="btn submitBtn mt-4" href="#">Schedule
+								Now<span class="ms-2"><i class="uil-arrow-right"></i></span></a>
 						</div>
 					</form>
 				</div>
@@ -161,5 +178,25 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 		<script src="main.js"></script>
+		<script type="application/javascript" defer>
+			let childDetailsContainer = $('.childDetailsContainer');
+			let submitBtn = $(".submitBtn");
+
+			function addNewChild() {
+				let addChildDataInput = $('.childData').first().clone();
+				addChildDataInput.find('input').val('');
+				addChildDataInput.find('.is-invalid').removeClass('is-invalid');
+				addChildDataInput.find('.deleteChildDataBtn').removeClass('d-none');
+				childDetailsContainer.append(addChildDataInput);
+			}
+
+			$(document).on('click', '.add-new-child', function () {
+				addNewChild();
+			});
+
+			$(document).on('click', '.deleteChildDataBtn', function () {
+				$(this).closest('.childData').remove();
+			});
+		</script>
 	</body>
 </html>
