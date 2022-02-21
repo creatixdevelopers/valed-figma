@@ -31,9 +31,9 @@
 			<div class="container">
 				<h2>Free session Registration</h2>
 				<p>Fill in the data for profile. It will take a couple of minutes.</p>
-				<div class="card">
+				<div class="card" id="parentCard">
 					<h5>Parent Details</h5>
-					<form id="freeSessionFormParent" action="#">
+					<form id="freeSessionFormParent">
 						<label>Full Name</label>
 						<input type="text" class="form-control" name="parentName" placeholder="Full name">
 						<label>Mobile Number</label>
@@ -48,21 +48,19 @@
 							<option>Europe</option>
 							<option>Australia</option>
 						</select>
-						<a id="nextBtn" class="btn submitBtn" href="#">Go
-							Next<span class="ms-2"><i class="uil-arrow-right"></i></span></a>
+						<button id="nextBtn" class="btn submitBtn">Go Next<span class="ms-2"><i class="uil-arrow-right"></i></span></button>
 					</form>
 				</div>
 
 				<div class="card">
 					<h5>Child Details</h5>
-					<p><span>Life-Lab</span></p>
-					<p>A Contemporary Approach to Character Building through Values, Life-SKills, Mindset &
+					<p class="small-heading"><span>Life-Lab</span></p>
+					<p class="small-heading">A Contemporary Approach to Character Building through Values, Life-SKills, Mindset &
 						Well-Being</p>
-					<p class="mt-4"><span>Saksham</span></p>
-					<p>A Cultural Approach to Character Building through Science behind RItuals, Mythology, Folk Tales,
-						Indian Role Models & much
-						more</p>
-					<form id="freeSessionFormChild" action="#">
+					<p class="small-heading mt-4"><span>Saksham</span></p>
+					<p class="small-heading">A Cultural Approach to Character Building through Science behind RItuals, Mythology, Folk Tales,
+						Indian Role Models & much more</p>
+					<form id="freeSessionFormChild">
 						<div class="childDetailsContainer">
 							<div class="childData row">
 								<div id="newChildLine" class="col-lg-12 mt-3">
@@ -98,7 +96,7 @@
 								</div>
 								<div class="col-lg-6">
 									<label>Time</label>
-									<input type="text" class="timepicker" id="timePicker" data-mintime="now" placeholder="Select time">
+									<input type="text" id="timePicker" placeholder="Select time">
 								</div>
 								<div class="col-lg-6">
 									<label>Select Program</label>
@@ -111,17 +109,13 @@
 							</div>
 						</div>
 						<div class="mt-4">
-							<a class="add-new-child"><span class="ms-2"><i class="uil-plus"></i></span>Add
-								Another Child
-							</a>
+							<a class="add-new-child"><span class="ms-2"><i class="uil-plus"></i></span>Add Another Child</a>
 						</div>
 						<div class="col-lg-6">
-							<a class="btn submitBtn mt-4" href="#">Schedule
-								Now<span class="ms-2"><i class="uil-arrow-right"></i></span></a>
+							<a class="btn submitBtn mt-4" href="#">Schedule Now<span class="ms-2"><i class="uil-arrow-right"></i></span></a>
 						</div>
 					</form>
 				</div>
-			</div>
 			</div>
 		</section>
 
@@ -180,7 +174,6 @@
 		<script src="main.js"></script>
 		<script type="application/javascript" defer>
 			let childDetailsContainer = $('.childDetailsContainer');
-			let submitBtn = $(".submitBtn");
 
 			function addNewChild() {
 				let addChildDataInput = $('.childData').first().clone();
