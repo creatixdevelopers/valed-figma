@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(9, 9, 9, 0.7);
     transition: 0.3s;
     z-index: 999;
 }
@@ -288,6 +288,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 15px;
     bottom: 15px;
     left: 15px;
+    border-radius: 15px;
     padding: 10px 0;
     background-color: #fff;
     overflow-y: auto;
@@ -345,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    height: 120vh;
+    height: 112vh;
     background: url('assets/img/banner.png') top center no-repeat;
     background-size: cover;
     padding-top: 5rem;
@@ -360,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
     #hero {
         height: 100vh;
-        margin-top: 20%;
+        margin-top: 2rem;
         background: url('assets/img/banner-phone.png') center center no-repeat;
         background-size: contain;
     }
@@ -371,9 +372,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (max-height: 500px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     #hero {
-        height: 110vh;
+        width: 100%;
+        height: 45vh;
+        background-size: cover;
+        margin-top: 4rem;
     }
 }
 
@@ -543,9 +547,10 @@ section {
 .programs .know-more {
     margin-top: 2rem;
     color: #fff;
-    padding: 0.8rem 4rem;
+    padding: 0.8rem;
+    width: 60%;
     background: #000000;
-    box-shadow: 0 10px 25px rgba(255, 168, 0, 0.32);
+    box-shadow: 0 10px 25px rgb(255 168 0 / 32%);
 }
 
 @media (max-width: 768px) {
@@ -657,6 +662,7 @@ section {
 
 #testimonials h2 {
     font-size: 2.7rem;
+    color: #FFA800;
     font-weight: 700;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -728,30 +734,39 @@ section {
 
 #testimonials .testimonials-arrow-up {
     position: absolute;
+    height: 4rem;
+    width: 4rem;
     top: 0;
     margin-left: 2rem;
-    left: 90%;
+    left: 95%;
     right: 0;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
+    background-image: url('assets/img/next.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #testimonials .testimonials-arrow-up:after {
-    font-size: 2rem;
-    color: #000000;
+    content: none;
 }
 
 #testimonials .testimonials-arrow-down {
     position: absolute;
+    height: 4rem;
+    width: 4rem;
     bottom: 0;
     margin-left: 2rem;
-    left: 90%;
+    left: 95%;
     right: 0;
     transform: rotate(90deg);
+    background-image: url('assets/img/next.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 #testimonials .testimonials-arrow-down:after {
-    font-size: 2rem;
-    color: #000000;
+    content: none;
 }
 
 
@@ -907,11 +922,20 @@ section {
     border-radius: 129px 20px 20px 20px;
 }
 
-.newsletter .newsletter-card h2 {
+
+.newsletter .newsletter-card h4 {
     color: #fff;
     font-weight: bold;
     text-align: center;
-    margin: 4rem 6rem;
+    margin: 1rem 6rem;
+}
+
+.newsletter .newsletter-card h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 4rem 2rem;
 }
 
 .newsletter .newsletter-card form {
@@ -1220,6 +1244,14 @@ section {
     padding-bottom: 50px;
 }
 
+#programs .swiper-slide {
+    filter: blur(3px);
+}
+
+#programs .swiper-slide-active {
+    filter: unset;
+}
+
 #programs .swiper-container .swiper-slide-shadow-left {
     border-radius: 20px;
 }
@@ -1516,6 +1548,36 @@ section {
 
 #freeSession select {
     color: #343a40;
+}
+
+#freeSession .form-check-input {
+    padding: 1rem !important;
+    margin-right: 1rem;
+}
+
+#freeSession .form-check-label {
+    margin: 0 !important;
+}
+
+#freeSession .form-check-label span a {
+    color: #F47521;
+}
+
+#freeSession .checkbox {
+    border: 1px solid black;
+    padding: 5px !important;
+    margin: 0 1rem 0 0 !important;
+}
+
+#freeSession .form-check-input {
+    box-shadow: none;
+}
+
+#freeSession .form-check-input:checked {
+    background-color: #F47521;
+    border-color: #F47521;
+    outline: none !important;
+    border: none !important;
 }
 
 #freeSession .submitBtn {
