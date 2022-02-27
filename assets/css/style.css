@@ -1639,7 +1639,6 @@ section {
 
 .registration .date-input {
     background: white;
-    width: auto;
 }
 
 .registration .submitBtn {
@@ -1663,6 +1662,14 @@ section {
 
 @media (max-width: 768px) {
     .registration .card {
+        width: 100%;
+    }
+
+    .registration .date-input {
+        width: 100%;
+    }
+
+    .registration .time-input {
         width: 100%;
     }
 }
