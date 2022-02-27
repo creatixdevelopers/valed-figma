@@ -3,13 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<link href="assets/img/favicon.png" rel="icon">
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,500&family=Volkhov:wght@400;700&family=Volkhov:wght@400;700&family=Volkhov:wght@400;700&family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
-		<link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
-		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/icons.css">
+		<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="assets/vendor/mdtimepicker/mdtimepicker.css">
+		<link rel="stylesheet" href="style.css">
 		<title>ValEd | Home</title>
 	</head>
 	<body>
@@ -20,13 +26,16 @@
 				</a>
 				<nav id="navbar" class="navbar order-last order-lg-0">
 					<ul>
-						<li><a class="nav-link scrollto d-block d-lg-none" href="#">Home</a></li>
-						<li><a class="nav-link scrollto d-block d-lg-none" href="#">About</a></li>
-						<li><a class="nav-link scrollto d-block d-lg-none" href="#">Who Do We Teach</a></li>
-						<li><a class="nav-link scrollto d-block d-lg-none" href="#">What We Offer</a></li>
-						<li><a class="nav-link scrollto d-block d-lg-none" href="#">Highlights</a></li>
-						<li><a class="nav-link scrollto d-block d-lg-none" href="#">FAQs</a></li>
-						<li><a class="nav-link scrollto d-block d-lg-none" href="#">Contact</a></li>
+						<li><a class="nav-link d-block d-lg-none" href="#">Home</a></li>
+						<li><a class="nav-link d-block d-lg-none" href="#">Life Lab</a></li>
+						<li><a class="nav-link d-block d-lg-none" href="#">Saksham</a></li>
+						<li><a class="nav-link d-block d-lg-none" href="#">Pricing</a></li>
+						<li><a class="nav-link scrollto d-block d-lg-none" href="#faq">FAQs</a></li>
+						<li class="d-block d-lg-none text-center w-100 mt-4">
+							<button class="btn whatsapp-btn">
+								<span><img src="assets/img/whatsapp-icon.png"></span>Chat on Whatsapp
+							</button>
+						</li>
 					</ul>
 					<i class="uil-bars mobile-nav-toggle"></i>
 				</nav>
@@ -39,12 +48,8 @@
 
 		<section id="about" class="about">
 			<div class="container">
-				<div class="section-title">
+				<div class="section-title mb-5">
 					<img src="assets/img/headings/about.png">
-					<p>
-						Only Children with Character change the world & Children need more than Academic Intelligence to
-						thrive in the 21st Century.
-					</p>
 				</div>
 				<div class="content row">
 					<div class="col-lg-4">
@@ -101,7 +106,7 @@
 			</div>
 		</section>
 
-		<section id="programs" class="programs">
+		<section id="programOptions" class="program-options">
 			<div class="section-title">
 				<img src="assets/img/headings/what-we-do.png">
 				<p>We offer two distinct programs to build character<br>
@@ -230,9 +235,9 @@
 								<div class="swiper-slide">
 									<div class="card w-75">
 										<p>
-											It was a proud moment to see my child write & perform an online skit on
+											Proud moment to see my child write & perform an online skit on
 											modern mahabharat, understand the wisdom of the stories in depth & relate it
-											to her life as a student & child. Thank you Val-Ed & Mayank sir from
+											to her life as a student & child. Thank you Val-Ed & Mayank sir
 										</p>
 										<h5>Smriti, Mother of Aarushi</h5>
 										<p>England, Europe</p>
@@ -249,15 +254,15 @@
 			</div>
 		</section>
 
-		<section class="faq">
-			<div class="container" data-aos="fade-up">
+		<section id="faq" class="faq">
+			<div class="container">
 				<div class="section-title">
 					<h2>Frequently Asked Questions</h2>
 				</div>
 				<div class="container">
 
 				</div>
-				<ul class="faq-list accordion" data-aos="fade-up">
+				<ul class="faq-list accordion">
 					<li>
 						<a class="collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
 							How many classes will children get to attend upon enrollment?
@@ -370,7 +375,7 @@
 		</section>
 
 		<section id="newsletter" class="newsletter">
-			<div class="container" data-aos="fade-up">
+			<div class="container">
 				<div class="container">
 					<img class="newsletter-btn" src="assets/img/newsletter-btn.png" alt="">
 					<div class="col-lg-12 newsletter-card">
@@ -395,36 +400,38 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-6 footer-contact">
-							<img class="mb-2" src="assets/img/logo.png" alt="">
-							<p>4th floor, No, 191,<br>2nd Cross Rd, 4th Block,<br>Malleshwaram, Bengaluru,<br>
-								Karnataka - 560003</p>
+							<img class="logo mb-2" src="assets/img/logo.png" alt="">
 							<p><span>Email: </span><a href="mailto:info@valedindia.com">info@valedindia.com</a></p>
 							<p><span>Phone: </span><a href="tel:+919731730636">+91 97317 30636</a></p>
+							<p><a href="https://api.whatsapp.com/send/?phone=918892243348&text=Hello%21+I+have+a+query%21&app_absent=0">
+								<span>Chat on Whatsapp: <img src="assets/img/whatsapp-icon.png" height="35"></span></a>
+							</p>
 						</div>
 						<div class="col-lg-3 col-md-6 footer-links">
 							<h4>Pages</h4>
 							<ul>
-								<li><a href="#">Home</a></li>
+								<li><a href="#">Saksham</a></li>
+								<li><a href="#">Life Lab</a></li>
+								<li><a href="#">Pricing</a></li>
 								<li><a href="#">Free Demo</a></li>
-								<li><a href="#">Paid Program</a></li>
 							</ul>
 						</div>
 
 						<div class="col-lg-3 col-md-6 footer-links">
 							<h4>Useful Links</h4>
 							<ul>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Disclaimer</a></li>
-								<li><a href="#">Terms & Conditions</a></li>
-								<li><a href="#">Return Policy</a></li>
+								<li><a href="privacy_policy.html">Privacy Policy</a></li>
+								<li><a href="disclaimer.html">Disclaimer</a></li>
+								<li><a href="terms_and_conditions.html">Terms & Conditions</a></li>
+								<li><a href="refund_policy.html">Refund Policy</a></li>
 							</ul>
 						</div>
 
 						<div class="col-lg-3 col-md-6">
 							<div class="social-links">
-								<a href="#"><i class="uil-instagram fs-2"></i></a>
-								<a href="#"><i class="uil-facebook-f fs-2"></i></a>
-								<a href="#"><i class="uil-youtube fs-2"></i></a>
+								<a href="https://www.instagram.com/valedglobalprograms/" target="_blank"><i class="uil-instagram fs-2"></i></a>
+								<a href="https://www.facebook.com/valedglobalprograms/" target="_blank"><i class="uil-facebook-f fs-2"></i></a>
+								<a href="https://www.youtube.com/channel/UCXqx3LrcOBy0Ez-I7d3FivQ" target="_blank"><i class="uil-youtube fs-2"></i></a>
 							</div>
 						</div>
 					</div>
@@ -438,6 +445,7 @@
 		</footer>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="assets/vendor/mdtimepicker/mdtimepicker.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>

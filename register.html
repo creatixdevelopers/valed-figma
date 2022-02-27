@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="assets/img/favicon.png" rel="icon">
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,500&family=Volkhov:wght@400;700&family=Volkhov:wght@400;700&family=Volkhov:wght@400;700&family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/icons.css">
+		<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="assets/vendor/mdtimepicker/mdtimepicker.css">
+		<link rel="stylesheet" href="style.css">
+		<title>ValEd | Register</title>
+	</head>
+	<body>
+		<header id="header" class="fixed-top d-flex align-items-center">
+			<div class="container d-flex align-items-center">
+				<a href="#" class="logo me-auto">
+					<img src="assets/img/logo.png" alt="logo">
+				</a>
+				<nav id="navbar" class="navbar order-last order-lg-0">
+					<ul>
+						<li><a class="nav-link d-block d-lg-none" href="#">Home</a></li>
+						<li><a class="nav-link d-block d-lg-none" href="#">Life Lab</a></li>
+						<li><a class="nav-link d-block d-lg-none" href="#">Saksham</a></li>
+						<li><a class="nav-link d-block d-lg-none" href="#">Pricing</a></li>
+						<li><a class="nav-link scrollto d-block d-lg-none" href="#faq">FAQs</a></li>
+						<li class="d-block d-lg-none text-center w-100 mt-4">
+							<button class="btn whatsapp-btn">
+								<span><img src="assets/img/whatsapp-icon.png"></span>Chat on Whatsapp
+							</button>
+						</li>
+					</ul>
+					<i class="uil-bars mobile-nav-toggle"></i>
+				</nav>
+				<a href="free_session.html" class="free-session-btn scrollto">Free Session</a>
+				<a href="pricing.html" class="enroll-now-btn scrollto">Enroll Now</a>
+			</div>
+		</header>
+
+		<section id="freeSession">
+			<div class="container">
+				<h2>Program Enrollment Form</h2>
+				<p>Please fill this form to enroll you child for a full program of your choice</p>
+				<div class="card" id="parentCard">
+					<h5>Parent Details</h5>
+					<form id="freeSessionFormParent">
+						<label>Full Name</label>
+						<input type="text" class="form-control" name="parentName" placeholder="Full name">
+						<label>Mobile Number</label>
+						<input type="text" class="form-control" name="mobile" placeholder="Mobile number">
+						<label>Email Address</label>
+						<input class="form-control" name="email" placeholder="Email address">
+						<label for="country">Country</label>
+						<select class="form-control w-50" id="country">
+							<option selected disabled>Please Select</option>
+							<option>India</option>
+							<option>USA</option>
+							<option>Europe</option>
+							<option>Australia</option>
+						</select>
+						<button id="nextBtn" class="btn submitBtn">Go Next<span class="ms-2"><i class="uil-arrow-right"></i></span></button>
+					</form>
+				</div>
+
+				<div class="card">
+					<h5>Child Details</h5>
+					<p class="small-heading"><span>Life-Lab</span></p>
+					<p class="small-heading">A Contemporary Approach to Character Building through Values, Life-SKills, Mindset &
+						Well-Being</p>
+					<p class="small-heading mt-4"><span>Saksham</span></p>
+					<p class="small-heading">A Cultural Approach to Character Building through Science behind RItuals, Mythology, Folk Tales,
+						Indian Role Models & much more</p>
+					<form id="freeSessionFormChild">
+						<div class="childDetailsContainer">
+							<div class="childData row">
+								<div id="newChildLine" class="col-lg-12 mt-3">
+									<hr>
+									<div class="col-lg-6 d-flex">
+										<button class="deleteChildDataBtn btn deleteBtn btn-danger d-none">
+											<i class="uil-trash-alt"></i>
+										</button>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<label>Full Name</label>
+									<input type="text" class="form-control" name="childName" placeholder="Full name">
+								</div>
+								<div class="col-lg-6">
+									<label>Age</label>
+									<input type="number" class="form-control" name="childAge" placeholder="Age">
+								</div>
+								<div class="col-lg-6">
+									<label>Commencement Date</label>
+									<input type="date" name="date">
+								</div>
+								<div class="col-lg-6">
+									<label>Select Program</label>
+									<select class="form-control" name="time">
+										<option selected disabled>Please Select</option>
+										<option>Life-Lab</option>
+										<option>Saksham</option>
+									</select>
+								</div>
+								<div class="col-lg-6">
+									<label>Select Plan</label>
+									<select class="form-control" name="time">
+										<option selected disabled>Please Select</option>
+										<option>Starter</option>
+										<option>Intermediate</option>
+										<option>Maestro</option>
+									</select>
+								</div>
+								<div class="col-lg-6">
+									<label>Time Zone</label>
+									<select class="form-control" name="time">
+										<option selected value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+										<option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+										<option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+										<option value="-10:00">(GMT -10:00) Hawaii</option>
+										<option value="-09:50">(GMT -9:30) Taiohae</option>
+										<option value="-09:00">(GMT -9:00) Alaska</option>
+										<option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+										<option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+										<option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+										<option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+										<option value="-04:50">(GMT -4:30) Caracas</option>
+										<option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+										<option value="-03:50">(GMT -3:30) Newfoundland</option>
+										<option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+										<option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+										<option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+										<option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+										<option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+										<option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+										<option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+										<option value="+03:50">(GMT +3:30) Tehran</option>
+										<option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+										<option value="+04:50">(GMT +4:30) Kabul</option>
+										<option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+										<option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+										<option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+										<option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+										<option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+										<option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+										<option value="+08:75">(GMT +8:45) Eucla</option>
+										<option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+										<option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+										<option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+										<option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+										<option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+										<option value="+11:50">(GMT +11:30) Norfolk Island</option>
+										<option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+										<option value="+12:75">(GMT +12:45) Chatham Islands</option>
+										<option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+										<option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+									</select>
+								</div>
+								<div class="col-lg-6">
+									<label>Time</label>
+									<input type="text" id="timePicker" placeholder="Select time">
+								</div>
+							</div>
+						</div>
+						<div class="mt-4">
+							<a class="add-new-child"><span class="ms-2"><i class="uil-plus"></i></span>Add Another Child</a>
+						</div>
+						<div class="d-flex align-items-center mt-4">
+							<input class="form-check-input checkbox" type="checkbox" name="checkbox">
+							<label class="form-check-label">I agree with <span><a href="#">Val-Ed’s Terms & Conditions</a></span></label>
+						</div>
+						<div class="col-lg-6">
+							<a class="btn submitBtn mt-4" href="#">Schedule Now<span class="ms-2"><i class="uil-arrow-right"></i></span></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 footer-contact">
+							<img class="logo mb-2" src="assets/img/logo.png" alt="">
+							<p><span>Email: </span><a href="mailto:info@valedindia.com">info@valedindia.com</a></p>
+							<p><span>Phone: </span><a href="tel:+919731730636">+91 97317 30636</a></p>
+							<p><a href="https://api.whatsapp.com/send/?phone=918892243348&text=Hello%21+I+have+a+query%21&app_absent=0">
+								<span>Chat on Whatsapp: <img src="assets/img/whatsapp-icon.png" height="35"></span></a>
+							</p>
+						</div>
+						<div class="col-lg-3 col-md-6 footer-links">
+							<h4>Pages</h4>
+							<ul>
+								<li><a href="#">Saksham</a></li>
+								<li><a href="#">Life Lab</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">Free Demo</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 col-md-6 footer-links">
+							<h4>Useful Links</h4>
+							<ul>
+								<li><a href="privacy_policy.html">Privacy Policy</a></li>
+								<li><a href="disclaimer.html">Disclaimer</a></li>
+								<li><a href="terms_and_conditions.html">Terms & Conditions</a></li>
+								<li><a href="refund_policy.html">Refund Policy</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 col-md-6">
+							<div class="social-links">
+								<a href="https://www.instagram.com/valedglobalprograms/" target="_blank"><i class="uil-instagram fs-2"></i></a>
+								<a href="https://www.facebook.com/valedglobalprograms/" target="_blank"><i class="uil-facebook-f fs-2"></i></a>
+								<a href="https://www.youtube.com/channel/UCXqx3LrcOBy0Ez-I7d3FivQ" target="_blank"><i class="uil-youtube fs-2"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container d-flex justify-content-center py-4">
+				<div class="copyright">
+					© Copyright <strong><span>ValEd India</span></strong>. All Rights Reserved
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="assets/vendor/mdtimepicker/mdtimepicker.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="main.js"></script>
+		<script type="application/javascript" defer>
+			let childDetailsContainer = $('.childDetailsContainer');
+
+			function addNewChild() {
+				let addChildDataInput = $('.childData').first().clone();
+				addChildDataInput.find('input').val('');
+				addChildDataInput.find('.is-invalid').removeClass('is-invalid');
+				addChildDataInput.find('.deleteChildDataBtn').removeClass('d-none');
+				childDetailsContainer.append(addChildDataInput);
+			}
+
+			$(document).on('click', '.add-new-child', function () {
+				addNewChild();
+			});
+
+			$(document).on('click', '.deleteChildDataBtn', function () {
+				$(this).closest('.childData').remove();
+			});
+		</script>
+	</body>
+</html>

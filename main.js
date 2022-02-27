@@ -93,8 +93,8 @@
      */
     on('click', '.mobile-nav-toggle', function (e) {
         select('#navbar').classList.toggle('navbar-mobile')
-        this.classList.toggle('bi-list')
-        this.classList.toggle('bi-x')
+        this.classList.toggle('uil-bars')
+        this.classList.toggle('uil-multiply')
     })
 
     /**
@@ -152,7 +152,7 @@
         coverflowEffect: {
             rotate: 0,
             stretch: 40,
-            depth: 300,
+            depth: 100,
             modifier: 1,
             slideShadows: true,
         },
