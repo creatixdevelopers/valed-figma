@@ -210,8 +210,10 @@
         },
     });
 
+    /**
+     * Time Picker
+     */
     mdtimepicker.defaults({theme: 'green', hourPadding: false, clearBtn: false});
-
     window.onload = function () {
         mdtimepicker('#timePicker');
     }
