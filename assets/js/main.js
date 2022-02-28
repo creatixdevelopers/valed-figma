@@ -58,7 +58,7 @@
      * Scrolls to an element with header offset
      */
     const scrollto = (el) => {
-        let header = select('#header')
+        let header = select('.header')
         let offset = header.offsetHeight
 
         if (!header.classList.contains('header-scrolled')) {
@@ -75,7 +75,7 @@
     /**
      * Toggle .header-scrolled class to #header when page is scrolled
      */
-    let selectHeader = select('#header')
+    let selectHeader = select('.header')
     if (selectHeader) {
         const headerScrolled = () => {
             if (window.scrollY > 100) {
@@ -157,7 +157,7 @@
             slideShadows: true,
         },
         pagination: {
-            el: '#programDots',
+            el: '.program-dots',
             clickable: true,
         },
         navigation: {
@@ -201,7 +201,7 @@
             slideShadows: false,
         },
         pagination: {
-            el: '#testimonialsDots',
+            el: '.testimonials-dots',
             clickable: true,
         },
         navigation: {
